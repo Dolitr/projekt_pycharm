@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20180520 14:45:22.806">
+<suite id="s1" name="Tests" source="D:\projekt_pycharm\tests">
+<suite id="s1-s1" name="Open Test Page" source="D:\projekt_pycharm\tests\open_test_page.robot">
+<test id="s1-s1-t1" name="Check If Page Loads">
+<kw name="Begin Web Test" library="global">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20180520 14:45:23.056" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20180520 14:45:23.056" endtime="20180520 14:45:27.709"></status>
+</kw>
+<status status="PASS" starttime="20180520 14:45:23.056" endtime="20180520 14:45:27.710"></status>
+</kw>
+<kw name="Open Page" library="global">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${test_page}</arg>
+</arguments>
+<msg timestamp="20180520 14:45:27.715" level="INFO">Opening url 'http://amazon.com'</msg>
+<status status="PASS" starttime="20180520 14:45:27.715" endtime="20180520 14:45:32.516"></status>
+</kw>
+<status status="PASS" starttime="20180520 14:45:27.714" endtime="20180520 14:45:32.516"></status>
+</kw>
+<kw name="End Web Test" library="global">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180520 14:45:32.517" endtime="20180520 14:45:35.656"></status>
+</kw>
+<status status="PASS" starttime="20180520 14:45:32.516" endtime="20180520 14:45:35.656"></status>
+</kw>
+<tags>
+<tag>Amazon</tag>
+</tags>
+<status status="PASS" starttime="20180520 14:45:23.056" endtime="20180520 14:45:35.656" critical="yes"></status>
+</test>
+<doc>Suite description</doc>
+<status status="PASS" starttime="20180520 14:45:22.853" endtime="20180520 14:45:35.656"></status>
+</suite>
+<status status="PASS" starttime="20180520 14:45:22.821" endtime="20180520 14:45:35.656"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Amazon</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Open Test Page">Tests.Open Test Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
